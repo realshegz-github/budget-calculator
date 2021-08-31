@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="bdc.css">
+    <title>budget calculator</title>
+</head>
+<body>
+    <header>
+        <h1>Budget Tracker</h1>
+    </header>
+
+        <div class="info">
+
+            <div class="pics">
+                <img src="/image/ali-morshedlou-WMD64tMfc4k-unsplash.jpg">
+            </div>
+
+            <div class="content">
+                <div>Fixed Budget: <p id="fbdg"></p> </div>
+                <p id="cbdg">Current Balance: </p>
+            <form class="myform">
+            <div class="add-money">
+                <p>Add money to budget</p>
+                <label for="add-money"></label>
+                <input class="input" type="number" name="Add Money" id="add-money" placeholder="fixed amount">
+                <button id="addBtn" onclick="function print()" class="btn">Add Money</button>
+            </div>
+            <div>
+                <p>Add Expenses</p>
+            </div>
+            <div class="item">                
+                <label for="item">
+                <input class="input" type="text" name="item" id="item" placeholder="Item">
+                <button class="btn" type="submit">Item</button>
+            </div>
+            <div class="amount">
+                 <label for="amount">
+                <input class="input" type="number" name="amount" id="amount" placeholder="Amount">
+                <button class="btn" type="submit">Amount</button>
+                </div>
+                <div class="btn-container"> 
+                <button class="btn" id="btn-container"> Add Expense</button>
+                </div>
+            </form>
+            </div>
+        </div>
+        <script src="./bdc.js">
+            
+        </script>
+</body>
+</html>
